@@ -1,0 +1,16 @@
+D:\FeedAnalyzer\FeedAnalyzer\FA.WPF\bin\Debug\FA.WPF.exe.config
+D:\FeedAnalyzer\FeedAnalyzer\FA.WPF\bin\Debug\FA.WPF.exe
+D:\FeedAnalyzer\FeedAnalyzer\FA.WPF\bin\Debug\FA.WPF.pdb
+D:\FeedAnalyzer\FeedAnalyzer\FA.WPF\bin\Debug\FA.BL.dll
+D:\FeedAnalyzer\FeedAnalyzer\FA.WPF\bin\Debug\FA.BL.pdb
+D:\FeedAnalyzer\FeedAnalyzer\FA.WPF\obj\Debug\FA.WPF.csprojResolveAssemblyReference.cache
+D:\FeedAnalyzer\FeedAnalyzer\FA.WPF\obj\Debug\MainWindow.g.cs
+D:\FeedAnalyzer\FeedAnalyzer\FA.WPF\obj\Debug\App.g.cs
+D:\FeedAnalyzer\FeedAnalyzer\FA.WPF\obj\Debug\FA.WPF_MarkupCompile.cache
+D:\FeedAnalyzer\FeedAnalyzer\FA.WPF\obj\Debug\FA.WPF_MarkupCompile.lref
+D:\FeedAnalyzer\FeedAnalyzer\FA.WPF\obj\Debug\MainWindow.baml
+D:\FeedAnalyzer\FeedAnalyzer\FA.WPF\obj\Debug\FA.WPF.g.resources
+D:\FeedAnalyzer\FeedAnalyzer\FA.WPF\obj\Debug\FA.WPF.Properties.Resources.resources
+D:\FeedAnalyzer\FeedAnalyzer\FA.WPF\obj\Debug\FA.WPF.csproj.GenerateResource.Cache
+D:\FeedAnalyzer\FeedAnalyzer\FA.WPF\obj\Debug\FA.WPF.exe
+D:\FeedAnalyzer\FeedAnalyzer\FA.WPF\obj\Debug\FA.WPF.pdb

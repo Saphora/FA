@@ -1,0 +1,6 @@
+D:\FeedAnalyzer\FeedAnalyzer\FA.UnitTests\bin\Debug\FA.UnitTests.dll
+D:\FeedAnalyzer\FeedAnalyzer\FA.UnitTests\bin\Debug\FA.UnitTests.pdb
+D:\FeedAnalyzer\FeedAnalyzer\FA.UnitTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\FeedAnalyzer\FeedAnalyzer\FA.UnitTests\obj\Debug\FA.UnitTests.csprojResolveAssemblyReference.cache
+D:\FeedAnalyzer\FeedAnalyzer\FA.UnitTests\obj\Debug\FA.UnitTests.dll
+D:\FeedAnalyzer\FeedAnalyzer\FA.UnitTests\obj\Debug\FA.UnitTests.pdb

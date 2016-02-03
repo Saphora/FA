@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("CSVAnalyzer.BL")]
+[assembly: AssemblyTitle("FA.BL")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("CSVAnalyzer.BL")]
+[assembly: AssemblyProduct("FA.BL")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a6890644-ade8-4343-ae16-62f8ce41fa77")]
+[assembly: Guid("86403614-1632-41bc-8a6f-3846505ec55c")]
 
 // Version information for an assembly consists of the following four values:
 //

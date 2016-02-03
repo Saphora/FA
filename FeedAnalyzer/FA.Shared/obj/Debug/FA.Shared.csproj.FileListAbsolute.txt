@@ -1,0 +1,5 @@
+D:\FeedAnalyzer\FeedAnalyzer\FA.Shared\bin\Debug\FA.Shared.dll
+D:\FeedAnalyzer\FeedAnalyzer\FA.Shared\bin\Debug\FA.Shared.pdb
+D:\FeedAnalyzer\FeedAnalyzer\FA.Shared\obj\Debug\FA.Shared.csprojResolveAssemblyReference.cache
+D:\FeedAnalyzer\FeedAnalyzer\FA.Shared\obj\Debug\FA.Shared.dll
+D:\FeedAnalyzer\FeedAnalyzer\FA.Shared\obj\Debug\FA.Shared.pdb
