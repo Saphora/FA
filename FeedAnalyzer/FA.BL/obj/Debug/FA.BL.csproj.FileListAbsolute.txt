@@ -3,3 +3,10 @@ D:\FeedAnalyzer\FeedAnalyzer\FA.BL\bin\Debug\FA.BL.pdb
 D:\FeedAnalyzer\FeedAnalyzer\FA.BL\obj\Debug\FA.BL.csprojResolveAssemblyReference.cache
 D:\FeedAnalyzer\FeedAnalyzer\FA.BL\obj\Debug\FA.BL.dll
 D:\FeedAnalyzer\FeedAnalyzer\FA.BL\obj\Debug\FA.BL.pdb
+C:\Projects\FeedAnalyzer\FA\FeedAnalyzer\FA.BL\bin\Debug\FA.BL.dll
+C:\Projects\FeedAnalyzer\FA\FeedAnalyzer\FA.BL\bin\Debug\FA.BL.pdb
+C:\Projects\FeedAnalyzer\FA\FeedAnalyzer\FA.BL\bin\Debug\FA.Shared.dll
+C:\Projects\FeedAnalyzer\FA\FeedAnalyzer\FA.BL\bin\Debug\FA.Shared.pdb
+C:\Projects\FeedAnalyzer\FA\FeedAnalyzer\FA.BL\obj\Debug\FA.BL.csprojResolveAssemblyReference.cache
+C:\Projects\FeedAnalyzer\FA\FeedAnalyzer\FA.BL\obj\Debug\FA.BL.dll
+C:\Projects\FeedAnalyzer\FA\FeedAnalyzer\FA.BL\obj\Debug\FA.BL.pdb

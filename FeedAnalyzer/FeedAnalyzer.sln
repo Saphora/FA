@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FA.BL", "FA.BL\FA.BL.csproj", "{86403614-1632-41BC-8A6F-3846505EC55C}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FA.Shared", "FA.Shared\FA.Shared.csproj", "{9BA03DA2-6DF9-4548-9DB0-D4380A3582D2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FA.UnitTests", "FA.UnitTests\FA.UnitTests.csproj", "{E13252C6-34D6-41FC-9C64-B1EB28BC6DE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FA.Interfaces", "FA.Interfaces\FA.Interfaces.csproj", "{FB53C673-10D9-4D15-854A-68DDF6AAC0D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{E13252C6-34D6-41FC-9C64-B1EB28BC6DE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E13252C6-34D6-41FC-9C64-B1EB28BC6DE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E13252C6-34D6-41FC-9C64-B1EB28BC6DE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB53C673-10D9-4D15-854A-68DDF6AAC0D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB53C673-10D9-4D15-854A-68DDF6AAC0D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB53C673-10D9-4D15-854A-68DDF6AAC0D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB53C673-10D9-4D15-854A-68DDF6AAC0D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

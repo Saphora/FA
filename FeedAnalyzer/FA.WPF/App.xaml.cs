@@ -1,4 +1,5 @@
 ﻿using FA.BL.Providers;
+using FA.BL.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -14,9 +15,10 @@ namespace FA.WPF
     /// </summary>
     public partial class App : Application
     {
+        List<ProductGridViewModel> Products = new List<ProductGridViewModel>();
         public App()
         {
-            CSVProvider provider = new CSVProvider("D:/FeedAnalyzer/productfeed.csv");
+
         }
     }
 }

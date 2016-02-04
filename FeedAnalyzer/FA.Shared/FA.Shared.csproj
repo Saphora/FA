@@ -40,7 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attribs\GridCol.cs" />
     <Compile Include="Attribs\CSVMap.cs" />
+    <Compile Include="Enum\DataGridColumnType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
