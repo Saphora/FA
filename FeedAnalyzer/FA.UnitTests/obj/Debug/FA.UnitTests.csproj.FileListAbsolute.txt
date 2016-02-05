@@ -10,3 +10,8 @@ C:\Projects\FeedAnalyzer\FA\FeedAnalyzer\FA.UnitTests\bin\Debug\Microsoft.Visual
 C:\Projects\FeedAnalyzer\FA\FeedAnalyzer\FA.UnitTests\obj\Debug\FA.UnitTests.csprojResolveAssemblyReference.cache
 C:\Projects\FeedAnalyzer\FA\FeedAnalyzer\FA.UnitTests\obj\Debug\FA.UnitTests.dll
 C:\Projects\FeedAnalyzer\FA\FeedAnalyzer\FA.UnitTests\obj\Debug\FA.UnitTests.pdb
+D:\FA\FA\FeedAnalyzer\FA.UnitTests\bin\Debug\FA.UnitTests.dll
+D:\FA\FA\FeedAnalyzer\FA.UnitTests\bin\Debug\FA.UnitTests.pdb
+D:\FA\FA\FeedAnalyzer\FA.UnitTests\obj\Debug\FA.UnitTests.csprojResolveAssemblyReference.cache
+D:\FA\FA\FeedAnalyzer\FA.UnitTests\obj\Debug\FA.UnitTests.dll
+D:\FA\FA\FeedAnalyzer\FA.UnitTests\obj\Debug\FA.UnitTests.pdb

@@ -3,3 +3,8 @@ C:\Projects\FeedAnalyzer\FA\FeedAnalyzer\FA.Interfaces\bin\Debug\FA.Interfaces.p
 C:\Projects\FeedAnalyzer\FA\FeedAnalyzer\FA.Interfaces\obj\Debug\FA.Interfaces.csprojResolveAssemblyReference.cache
 C:\Projects\FeedAnalyzer\FA\FeedAnalyzer\FA.Interfaces\obj\Debug\FA.Interfaces.dll
 C:\Projects\FeedAnalyzer\FA\FeedAnalyzer\FA.Interfaces\obj\Debug\FA.Interfaces.pdb
+D:\FA\FA\FeedAnalyzer\FA.Interfaces\bin\Debug\FA.Interfaces.dll
+D:\FA\FA\FeedAnalyzer\FA.Interfaces\bin\Debug\FA.Interfaces.pdb
+D:\FA\FA\FeedAnalyzer\FA.Interfaces\obj\Debug\FA.Interfaces.csprojResolveAssemblyReference.cache
+D:\FA\FA\FeedAnalyzer\FA.Interfaces\obj\Debug\FA.Interfaces.dll
+D:\FA\FA\FeedAnalyzer\FA.Interfaces\obj\Debug\FA.Interfaces.pdb

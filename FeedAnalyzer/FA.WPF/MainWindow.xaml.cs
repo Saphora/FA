@@ -23,9 +23,17 @@ using FA.BL.Model;
 using Telerik.Windows.Controls.Legend;
 using Telerik.Windows.Controls.ChartView;
 using Telerik.Charting;
+using PieControls;
+using System.Collections.ObjectModel;
+using FA.WPF.Util;
+using FA.WPF.Windows;
 
 namespace FA.WPF
 {
+    public class PieDataCollection<T> : ObservableCollection<T> where T : PieSegment
+    {
+        public string CollectionName { get; set; }
+    }
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
@@ -36,8 +44,9 @@ namespace FA.WPF
         private Dictionary<string, int> ProductCatCount = new Dictionary<string, int>();
         public MainWindow()
         {
-            Dialog.FileOk += Dialog_FileOk;
             InitializeComponent();
+            InitializeRadPieChart();
+            Dialog.FileOk += Dialog_FileOk;
             TxtCSVPath.IsReadOnly = true;
             SetEllipseDisabled();
             InitializeProductsGrid();
@@ -86,7 +95,7 @@ namespace FA.WPF
         private void SetEllipseSucces()
         {
             EllipseStatus.Fill = new SolidColorBrush(Color.FromRgb(0, 255, 0));
-            LblFileStatus.Content = "Bestand succesvol geladen";
+            LblFileStatus.Content = string.Format("Totaal aantal producten: {0}", Products.Count());
         }
 
         private void SetEllipseFailed()
@@ -98,6 +107,7 @@ namespace FA.WPF
 
         private void InitializeProductsGrid()
         {
+
             foreach(PropertyInfo info in typeof(ProductGridViewModel).GetProperties())
             {
                 GridCol attrib = (GridCol) info.GetCustomAttribute<GridCol>();
@@ -108,9 +118,9 @@ namespace FA.WPF
                 }
             }
         }
+
         private void _CountProductsByCategory()
         {
-
             List<string> r = Products.Select(s => s.ProductCategory).Distinct().ToList();
             foreach (string c in r)
             {
@@ -119,30 +129,21 @@ namespace FA.WPF
         }
         private void InitializeRadPieChart()
         {
+            RandomColor color = new RandomColor();
             _CountProductsByCategory();
-            List<PieDataPoint> Categories = (from c in 
-                                                        Products.Select(s=>s.ProductCategory).Distinct<string>()
-                                                         select new PieDataPoint { IsSelected = false,
-                                                         Label = c, Value =ProductCatCount[c]} ).ToList();
-            try {
-                foreach(string c in ProductCatCount.Keys)
-                {
-                    Random r = new Random();
-                    Random g = new Random();
-                    Random b = new Random();
-                    RadPieChart.LegendItems.Add(new LegendItem { Title = c ,  MarkerFill = new SolidColorBrush(Color.FromRgb(Convert.ToByte(255/r.Next(255)),Convert.ToByte(255/g.Next(255)), Convert.ToByte(255/b.Next(255)))) });
-                    RadPieChart.DataContext = Categories;
-                    
-
-                }
-                RadPieChart.Name = "Producten per categorie";
-
-            }
-            catch(Exception ex)
+            PieDataCollection<PieSegment> collection1 = new PieDataCollection<PieSegment>();
+            foreach (KeyValuePair<string, int> kvp in ProductCatCount)
             {
-                Console.Write(ex.Message);
+                collection1.Add(new PieSegment { Color = color.NextColor(), Value = kvp.Value, Name = kvp.Key });
             }
-            
+            collection1.CollectionName = "Categories";
+            chart1.Data = collection1;            
+        }
+
+        private void ProductsGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            ProductDetail win = new ProductDetail();
+            win.ShowProduct(new ProductGridViewModel());
         }
     }
 }
