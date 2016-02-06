@@ -20,13 +20,10 @@ using FA.Shared.Attribs;
 using FA.Shared.Enum;
 using FA.WPF.Factories;
 using FA.BL.Model;
-using Telerik.Windows.Controls.Legend;
-using Telerik.Windows.Controls.ChartView;
-using Telerik.Charting;
 using PieControls;
 using System.Collections.ObjectModel;
 using FA.WPF.Util;
-using FA.WPF.Windows;
+using FA.WPF.Controls;
 
 namespace FA.WPF
 {
@@ -49,7 +46,6 @@ namespace FA.WPF
             Dialog.FileOk += Dialog_FileOk;
             TxtCSVPath.IsReadOnly = true;
             SetEllipseDisabled();
-            InitializeProductsGrid();
         }
 
         private void BtnSelectFeed_Click(object sender, RoutedEventArgs e)
@@ -68,7 +64,7 @@ namespace FA.WPF
                 CSVProvider provider = new CSVProvider(true);
                 provider.LoadCSV(Dialog.FileName);
                 Products = provider.GetDataByColNames<Product>();
-                SetGridData(Products);
+                ProductsGridCtrl.SetGridData(Products);
                 SetEllipseSucces();
                 InitializeRadPieChart();
             } catch
@@ -77,23 +73,20 @@ namespace FA.WPF
             }
         }
 
-        private void SetGridData(List<Product> products)
-        {
-            List<ProductGridViewModel> result = (from p in products.OrderBy(o=>o.ProductCategory) select new ProductGridViewModel(p)).ToList();
-            foreach(ProductGridViewModel m in result)
-            {
-                ProductsGrid.Items.Add(m);
-            }
-        }
+
 
         private void SetEllipseDisabled()
         {
+            PieTabItem.IsEnabled = false;
+            GridTabItem.IsEnabled = false;
             EllipseStatus.Fill = new SolidColorBrush(Color.FromRgb(186, 186, 186));
             LblFileStatus.Content = "Bestand nog niet geladen";
         }
 
         private void SetEllipseSucces()
         {
+            PieTabItem.IsEnabled = true;
+            GridTabItem.IsEnabled = true;
             EllipseStatus.Fill = new SolidColorBrush(Color.FromRgb(0, 255, 0));
             LblFileStatus.Content = string.Format("Totaal aantal producten: {0}", Products.Count());
         }
@@ -103,20 +96,6 @@ namespace FA.WPF
             EllipseStatus.Fill = new SolidColorBrush(Color.FromRgb(255, 0, 0));
             LblFileStatus.Content = "Bestand kan niet geladen worden,"+Environment.NewLine+"controleer uw rechten op het bestand en probeer opnieuw.";
 
-        }
-
-        private void InitializeProductsGrid()
-        {
-
-            foreach(PropertyInfo info in typeof(ProductGridViewModel).GetProperties())
-            {
-                GridCol attrib = (GridCol) info.GetCustomAttribute<GridCol>();
-                if (attrib != null)
-                {
-                    DataGridColumn col = DataGridColumnFactory.CreateColumn(attrib, info);
-                    ProductsGrid.Columns.Add(col);
-                }
-            }
         }
 
         private void _CountProductsByCategory()
@@ -140,10 +119,6 @@ namespace FA.WPF
             chart1.Data = collection1;            
         }
 
-        private void ProductsGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-            ProductDetail win = new ProductDetail();
-            win.ShowProduct(new ProductGridViewModel());
-        }
+
     }
 }

@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Attribs\GridCol.cs" />
     <Compile Include="Attribs\CSVMap.cs" />
+    <Compile Include="Attribs\FieldLabel.cs" />
     <Compile Include="Enum\DataGridColumnType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

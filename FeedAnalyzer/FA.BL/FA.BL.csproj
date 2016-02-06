@@ -41,10 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Collections\ObservableRangeCollection.cs" />
     <Compile Include="Mappers\CSVEntityMapper.cs" />
     <Compile Include="Model\Product.cs" />
     <Compile Include="Providers\CSVProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\ProductDetailViewModel.cs" />
     <Compile Include="ViewModels\ProductGridViewModel.cs" />
   </ItemGroup>
   <ItemGroup>

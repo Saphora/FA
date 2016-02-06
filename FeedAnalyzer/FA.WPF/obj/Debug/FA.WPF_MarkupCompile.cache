@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\FA\FA\FeedAnalyzer\FA.WPF\obj\Debug\
+C:\Projects\FeedAnalyzer\FA\FeedAnalyzer\FA.WPF\obj\Debug\
 FA.WPF
 none
 false
 DEBUG;TRACE
-D:\FA\FA\FeedAnalyzer\FA.WPF\App.xaml
-2-1486025045
+C:\Projects\FeedAnalyzer\FA\FeedAnalyzer\FA.WPF\App.xaml
+3672582904
 
-8-1340851305
-23824206310
-MainWindow.xaml;Windows\ProductDetail.xaml;
+91904399233
+23-328410444
+Controls\ProductsGridControl.xaml;MainWindow.xaml;Controls\ProductDetailControl.xaml;
 
 False
 

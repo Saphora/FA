@@ -1,8 +1,0 @@
-﻿<Window x:Class="FA.WPF.Windows.ProductDetail"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Product" Height="300" Width="300">
-    <Grid>
-        <StackPanel x:Name="StackItems" HorizontalAlignment="Left" Height="249" Margin="10,10,0,0" VerticalAlignment="Top" Width="272"/>
-    </Grid>
-</Window>

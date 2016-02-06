@@ -78,10 +78,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Util\RandomColor.cs" />
-    <Compile Include="Windows\ProductDetail.xaml.cs">
-      <DependentUpon>ProductDetail.xaml</DependentUpon>
+    <Compile Include="Controls\ProductsGridControl.xaml.cs">
+      <DependentUpon>ProductsGridControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Util\RandomColor.cs" />
+    <Compile Include="Controls\ProductDetailControl.xaml.cs">
+      <DependentUpon>ProductDetailControl.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Controls\ProductsGridControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -95,7 +102,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Windows\ProductDetail.xaml">
+    <Page Include="Controls\ProductDetailControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

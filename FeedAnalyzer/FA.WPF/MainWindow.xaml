@@ -1,14 +1,16 @@
-﻿<Window x:Class="FA.WPF.MainWindow"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FA.WPF"
         xmlns:pie="clr-namespace:PieControls;assembly=PieControls"
+        xmlns:Controls="clr-namespace:FA.WPF.Controls" x:Class="FA.WPF.MainWindow"
         mc:Ignorable="d"
         Title="Beslist.nl - Feed Analyzer" Height="706.029" Width="857.153">
     <Grid>
-        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Margin="13,80,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="586" Width="825">
+
+        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Margin="13,80,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="586" Width="825" Visibility="Visible">
             <TabControl.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -17,18 +19,14 @@
                     <TranslateTransform X="-0.983"/>
                 </TransformGroup>
             </TabControl.RenderTransform>
-            <TabItem Header="Pie chart">
+            <TabItem x:Name="PieTabItem" Header="Pie chart" IsEnabled="false">
                 <pie:PieChart  Grid.Column="1" x:Name="chart1" Width="380" Height="340" PieWidth="330" PieHeight="330" Margin="5,5,5,15" HorizontalAlignment="Left"/>
             </TabItem>
-            <TabItem Header="Grid">
-                <Grid Background="#FFE5E5E5">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="36*"/>
-                        <ColumnDefinition Width="455*"/>
-                    </Grid.ColumnDefinitions>
-                    <DataGrid x:Name="ProductsGrid" MouseDoubleClick="ProductsGrid_MouseDoubleClick" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="2" IsReadOnly="true"/>
-                </Grid>
+            <TabItem x:Name="GridTabItem" Header="Grid" IsEnabled="False">
+
+                <Controls:ProductsGridControl x:Name="ProductsGridCtrl" Height="Auto" Width="Auto"/>
             </TabItem>
+            <TabItem x:Name="BarCharItem" Header="Bar chart"/>
         </TabControl>
         <Button x:Name="BtnSelectFeed" Content="Kies feedbestand" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="121" Click="BtnSelectFeed_Click"/>
         <TextBox x:Name="TxtCSVPath" HorizontalAlignment="Left" Height="20" Margin="136,10,0,0" TextWrapping="Wrap" Text="Geen CSV bestand geselecteerd." VerticalAlignment="Top" Width="703"/>
